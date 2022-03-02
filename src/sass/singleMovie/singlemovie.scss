@@ -1,0 +1,192 @@
+.movie-details {
+  padding-top: 5rem;
+  background-color: $dark-color;
+  // height: 100vh;
+  padding-bottom: 4rem;
+  .card {
+    position: relative;
+    z-index: 2;
+    .overlay:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      left: 0;
+      top: 0;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+  .details-banner {
+    height: 65vh;
+    // width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 99;
+    .single-m-flex {
+      position: absolute;
+      // width: 30rem;
+      top: 0;
+      left: 0;
+      display: flex;
+
+      margin: 2rem 5rem;
+      z-index: 9;
+      img {
+        width: 20vw;
+        margin-right: 5rem;
+        opacity: 1;
+      }
+      .movie-info-wraper {
+        margin-top: 3rem;
+
+        h1 {
+          color: #fff;
+          font-size: 4vw;
+        }
+        .movie-info {
+          display: flex;
+          // width: 40rem;
+          align-items: center;
+          color: #fff;
+          font-size: 3vw;
+          h5 {
+            font-size: 3vw;
+          }
+        }
+        .watch-now-btn {
+          background-color: #ff0000;
+          color: #ffffff;
+          font-size: 2rem;
+          font-weight: bold;
+          border: none;
+          outline: none;
+          line-height: 4rem;
+          padding: 0.4rem 2rem;
+          border-radius: 1rem;
+          -webkit-border-radius: 1rem;
+          -moz-border-radius: 1rem;
+          -ms-border-radius: 1rem;
+          -o-border-radius: 1rem;
+          letter-spacing: 0.1rem;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: 65vh;
+      object-fit: cover;
+      opacity: 0.8;
+      position: relative;
+    }
+
+    .movie-setting {
+      display: flex;
+
+      button {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+
+        background-color: purple;
+        outline: none;
+        border: none;
+        margin: 4rem 1rem;
+      }
+    }
+    .watch-trailer {
+      display: flex;
+      align-items: center;
+      button {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        background-color: transparent;
+        line-height: 1.5rem;
+        align-items: center;
+
+        outline: none;
+        border: none;
+        animation: Pulshing 1500ms infinite;
+        -webkit-animation: Pulshing 1500ms infinite;
+      }
+
+      @keyframes Pulshing {
+        0% {
+          box-shadow: #8a2be2 0 0 0 0;
+        }
+        75% {
+          box-shadow: #8a2be200 0 0 0 1.5rem;
+          transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          -o-transform: scale(1.2);
+        }
+      }
+
+      .bi {
+        font-size: 4rem;
+        color: #8a2be2;
+        margin-right: 2.5rem;
+      }
+      span {
+        color: #fff;
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+        font-weight: 600;
+        margin-left: 2.5rem;
+      }
+    }
+  }
+  //   .details-banner:before {
+  //     content: "";
+
+  //     width: 100%;
+  //     height: 100%;
+
+  //     background-color: red;
+  //   }
+}
+
+// -----------Description design css--------------------
+
+.movie-desc-wraper {
+  padding: 0 3rem;
+}
+
+@media (max-width: 950px) {
+  .movie-details {
+    .details-banner {
+      margin-top: 5rem;
+      .single-m-flex {
+        justify-content: space-between;
+        .movie-info-wraper {
+          margin-top: 3rem;
+          margin-left: 5rem;
+        }
+        img {
+          margin-right: 2rem;
+          display: none;
+        }
+      }
+    }
+  }
+}
+// ------MOBILE MODE----------------------------
+@media (max-width: 549px) {
+  .movie-details {
+    .movie-info-wraper {
+      margin-top: 3rem;
+    }
+  }
+}

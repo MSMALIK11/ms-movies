@@ -1,0 +1,51 @@
+.movie-desc-wraper {
+  padding-left: 10rem !important;
+  // margin: 0 4rem;
+
+  color: #ffffff;
+  padding-left: 4rem;
+  .movie-name {
+    color: #ffffff;
+    font-size: 5vw;
+    text-transform: capitalize;
+    margin-top: 4rem;
+  }
+  .movie-desc {
+    font-size: 1.4vw;
+    line-height: 4rem;
+  }
+  .movie-ul {
+    list-style-type: none;
+    font-size: 2vw;
+    line-height: 7rem;
+
+    width: 40vw;
+    li {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+
+  .views {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 2rem;
+      line-height: 4rem;
+    }
+    .bi {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 549px) {
+  .movie-desc-wraper {
+    padding-left: 2rem !important;
+  }
+  .movie-ul {
+    width: 30rem;
+  }
+}

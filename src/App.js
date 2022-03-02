@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Banner from "./component/Banner";
+
+import Header from "./component/Header";
+import "./sass/main.css";
+import { Routes, Route } from "react-router-dom";
+import Favourite from "./component/Favourite";
+import SingleMovies from "./component/SingleMovies";
+import Playlist from "./component/Playlist";
+import HomeSlider from "./component/features/HomeSlider";
+import Login from "./component/Auth/Login";
+import Signin from "./component/Auth/Signin";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <div style={{ paddingTop: "2rem" }}>
+        <Routes>
+          <Route exact path="/" element={<Banner />} />
+          <Route path="/favourite" element={<Favourite />} />
+          <Route path="/trending" element={<HomeSlider />} />
+          <Route path="/movie" element={<SingleMovies />} />
+          <Route path="/playlist" element={<Playlist />} />
+          <Route path="/register" element={<Signin />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 
