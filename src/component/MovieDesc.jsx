@@ -4,7 +4,7 @@ const MovieDesc = ({ movie }) => {
   return (
     <>
       <div className="movie-desc-wraper">
-        <h1 className="movie-name">Movie title</h1>
+        <h1 className="movie-name">{movie.title}</h1>
         <div className="views">
           <span>
             <i className="bi bi-eye-fill me-2"></i>
@@ -28,7 +28,7 @@ const MovieDesc = ({ movie }) => {
           </li>
           <li>
             <span>Audio languages</span>
-            <span> English,Hindi</span>
+            <span>{movie.original_language}</span>
           </li>
           <li>
             <span>Genre</span>
@@ -40,7 +40,7 @@ const MovieDesc = ({ movie }) => {
           </li>
           <li>
             <span>Release Date</span>
-            <span>16 Feb,2022</span>
+            <span>{movie.release_date}</span>
           </li>
         </ul>
       </div>

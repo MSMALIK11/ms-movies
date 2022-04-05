@@ -1,8 +1,12 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import LatestEpisod from "./LatestEpisod";
+import { useLocation } from "react-router-dom";
 
 const Playlist = () => {
+  const location = useLocation();
+  const { state } = location;
+
   return (
     <>
       <div className="playlist-wraper">
@@ -21,7 +25,7 @@ const Playlist = () => {
             </div>
           </div>
         </div>
-        <LatestEpisod />
+        <LatestEpisod movie={state} />
       </div>
     </>
   );

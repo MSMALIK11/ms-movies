@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/" element={<Banner />} />
           <Route path="/favourite" element={<Favourite />} />
           <Route path="/trending" element={<HomeSlider />} />
-          <Route path="/movie" element={<SingleMovies />} />
+          <Route path="/movie/:id" element={<SingleMovies />} />
           <Route path="/playlist" element={<Playlist />} />
           <Route path="/register" element={<Signin />} />
           <Route path="/login" element={<Login />} />

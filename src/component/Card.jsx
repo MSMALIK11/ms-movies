@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Banner from "./Banner";
 import CardList from "./CardList";
-
+import { Link } from "react-router-dom";
 const Card = ({ movies, loading, setPage, page, pageArr, setPageArr }) => {
   const [hover, setHover] = useState("");
   const [fvrt, setFvrt] = useState([]);
@@ -81,6 +81,11 @@ const Card = ({ movies, loading, setPage, page, pageArr, setPageArr }) => {
                                 : "ADD TO FVRT"}
                             </button>
                           )}
+                          <div className="movie-name">
+                            <Link to={`/movie/${movie.id}`}>
+                              <h1>{movie.title}</h1>
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>

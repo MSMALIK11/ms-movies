@@ -1,20 +1,23 @@
 import React from "react";
 import img from "./images/mortalcombat.jfif";
 
-const LatestEpisod = () => {
-  const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const LatestEpisod = ({ movie }) => {
+  const array = [1, 2, 3, 4, 5, 6];
   return (
     <>
       <div className="container mt-4 latest-ep-wraper">
         <div className="episod-info">
-          <h1 className="episod-title">THE HERO CAMP</h1>
+          <h1 className="episod-title">{movie.title}</h1>
+
           <h1 className="episode-sub mt-4">
             S1 E01 Lorem ipsum dolor sit amet.
           </h1>
+
           <p className="episode-text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ad
             magnam possimus molestias vel rerum dignissimos praesentium iure
           </p>
+
           <ul className="setting-icon">
             <li>
               <span>
@@ -46,7 +49,7 @@ const LatestEpisod = () => {
             {array.map((value) => {
               return (
                 <>
-                  <div className="col-sm-12 col-md-3 col-lg-3 mb-4">
+                  <div className="col-sm-12 col-md-4 col-lg-3 mb-4">
                     <div className="card bg-dark">
                       <div className="card-img">
                         <img src={img} alt="" className="img-fluid" />

@@ -12,7 +12,7 @@ const HomeSlider = () => {
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-indicators opacity-0">
+          <div class="carousel-indicators">
             <button
               type="button"
               data-bs-target="#carouselExampleCaptions"
@@ -41,7 +41,7 @@ const HomeSlider = () => {
                 <h2>
                   <span className="line"></span>High Rated
                 </h2>
-                <h1>avangers</h1>
+                <h1>avengers</h1>
                 <div className="carousel-m-info">
                   <ul className="d-flex">
                     <li className="nav-item">
@@ -71,7 +71,7 @@ const HomeSlider = () => {
                 <h2>
                   <span className="line"></span>High Rated
                 </h2>
-                <h1>avangers</h1>
+                <h1>avengers</h1>
                 <div className="carousel-m-info">
                   <ul className="d-flex">
                     <li className="nav-item">
@@ -101,7 +101,7 @@ const HomeSlider = () => {
                 <h2>
                   <span className="line"></span>High Rated
                 </h2>
-                <h1>avangers</h1>
+                <h1>avengers</h1>
                 <div className="carousel-m-info">
                   <ul className="d-flex">
                     <li className="nav-item">
