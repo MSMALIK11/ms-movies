@@ -37,7 +37,7 @@ const Header = () => {
                   </Link>
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <select
                     className="nav-link"
                     class="form-select"
@@ -50,7 +50,7 @@ const Header = () => {
                     <option value="2">Hollywood</option>
                     <option value="3">South Movies</option>
                   </select>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link to="/register" class="nav-link" href="#">
                     Signup

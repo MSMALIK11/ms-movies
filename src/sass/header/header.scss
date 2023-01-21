@@ -5,17 +5,10 @@
   position: fixed;
 
   height: 5rem;
-  // background-color: $dark-color;
-  background-image: linear-gradient(
-    to right,
-    #0000ffd2,
-    #be1010d2,
-    #13d313,
-    #d6d617,
-    pink
-  );
+  background-color: $dark-color;
+  // background-image: linear-gradient(to right, #0000ffd2, #be1010d2, #13d313, #d6d617, pink);
   .navbar-wraper {
-    padding: 1rem 10rem;
+    padding: 0 10rem;
     background-color: rgba(255, 255, 255, 0.1);
 
     backdrop-filter: blur(30px);
@@ -26,7 +19,7 @@
         .nav-item {
           .nav-link {
             color: #ffffff;
-            font-size: 2vw;
+            font-size: 18px;
             text-align: center;
             font-weight: 700;
             margin-left: 2rem;
